@@ -1,4 +1,4 @@
-#include <development-kit/gbdk/include/gb/gb.h>
+#include <gb/gb.h>
 #include <stdio.h>
 
 void main()
