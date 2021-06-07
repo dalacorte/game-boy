@@ -22,7 +22,6 @@
 
 */
 
-
 /* Bank of tiles. */
 #define pikachuBank 0
 /* Start of tile array. */
