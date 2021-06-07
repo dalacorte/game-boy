@@ -1,9 +1,9 @@
                               1 ;--------------------------------------------------------
                               2 ; File Created by SDCC : FreeWare ANSI-C Compiler
-                              3 ; Version 2.2.1 Sun Jun 06 21:30:08 2021
+                              3 ; Version 2.2.1 Sun Jun 06 21:42:09 2021
                               4 
                               5 ;--------------------------------------------------------
-                              6 	.module lcc333120
+                              6 	.module lcc105480
                               7 	
                               8 ;--------------------------------------------------------
                               9 ; Public variables in this module
@@ -114,7 +114,7 @@
                             114 	.area _GSINIT
                             115 	.area _GSFINAL
                             116 	.area _GSINIT
-                            117 ;	main.c 35
+                            117 ;	main.c 33
                             118 ; genAssign (pointer)
    0000 11 00 00            119 	ld	de,#_Pikachu + 0
    0003 3E 61               120 	ld	a,#0x61
@@ -324,7 +324,7 @@
    0000                     324 _main:
    0000 C5                  325 	push	bc
                             326 	
-                            327 ;	main.c 9
+                            327 ;	main.c 7
                             328 ; genIpush
    0001 21 00 00            329 	ld	hl,#_Pikachu + 0
    0004 E5                  330 	push	hl
@@ -339,7 +339,7 @@
                             339 ; genCall
    000D CD 00 00            340 	call	_set_sprite_data
    0010 E8 04               341 	lda	sp,4(sp)
-                            342 ;	main.c 10
+                            342 ;	main.c 8
                             343 ; genIpush
    0012 3E 00               344 	ld	a,#0x00
    0014 F5                  345 	push	af
@@ -351,7 +351,7 @@
                             351 ; genCall
    001A CD 00 00            352 	call	_set_sprite_tile
    001D E8 02               353 	lda	sp,2(sp)
-                            354 ;	main.c 11
+                            354 ;	main.c 9
                             355 ; genIpush
    001F 3E 4E               356 	ld	a,#0x4E
    0021 F5                  357 	push	af
@@ -367,7 +367,7 @@
                             367 ; genCall
    002B CD 00 00            368 	call	_move_sprite
    002E E8 03               369 	lda	sp,3(sp)
-                            370 ;	main.c 12
+                            370 ;	main.c 10
                             371 ; genOr
                             372 ; AOP_SFR for _LCDC_REG
                             373 ; Type res[4] = l[4]&r[1]
@@ -375,10 +375,10 @@
    0030 F0 00               375 	ldh	a,(_LCDC_REG+0) ; x
    0032 F6 02               376 	or	a,#0x02
    0034 E0 00               377 	ldh	(_LCDC_REG+0),a
-                            378 ;	main.c 14
+                            378 ;	main.c 12
                             379 ; genLabel
    0036                     380 00107$:
-                            381 ;	main.c 16
+                            381 ;	main.c 14
                             382 ; genCall
    0036 CD 00 00            383 	call	_joypad
    0039 4B                  384 	ld	c,e
@@ -408,7 +408,7 @@
    0052                     408 00119$:
                             409 ; genGoto
    0052 C3 A2 00            410 	jp	00105$
-                            411 ;	main.c 19
+                            411 ;	main.c 17
                             412 ; genLabel
    0055                     413 00101$:
                             414 ; genIpush
@@ -426,10 +426,10 @@
                             426 ; genCall
    0061 CD 00 00            427 	call	_scroll_sprite
    0064 E8 03               428 	lda	sp,3(sp)
-                            429 ;	main.c 20
+                            429 ;	main.c 18
                             430 ; genGoto
    0066 C3 A2 00            431 	jp	00105$
-                            432 ;	main.c 22
+                            432 ;	main.c 20
                             433 ; genLabel
    0069                     434 00102$:
                             435 ; genIpush
@@ -447,10 +447,10 @@
                             447 ; genCall
    0075 CD 00 00            448 	call	_scroll_sprite
    0078 E8 03               449 	lda	sp,3(sp)
-                            450 ;	main.c 23
+                            450 ;	main.c 21
                             451 ; genGoto
    007A C3 A2 00            452 	jp	00105$
-                            453 ;	main.c 25
+                            453 ;	main.c 23
                             454 ; genLabel
    007D                     455 00103$:
                             456 ; genIpush
@@ -468,10 +468,10 @@
                             468 ; genCall
    0089 CD 00 00            469 	call	_scroll_sprite
    008C E8 03               470 	lda	sp,3(sp)
-                            471 ;	main.c 26
+                            471 ;	main.c 24
                             472 ; genGoto
    008E C3 A2 00            473 	jp	00105$
-                            474 ;	main.c 28
+                            474 ;	main.c 26
                             475 ; genLabel
    0091                     476 00104$:
                             477 ; genIpush
@@ -489,10 +489,10 @@
                             489 ; genCall
    009D CD 00 00            490 	call	_scroll_sprite
    00A0 E8 03               491 	lda	sp,3(sp)
-                            492 ;	main.c 30
+                            492 ;	main.c 28
                             493 ; genLabel
    00A2                     494 00105$:
-                            495 ;	main.c 32
+                            495 ;	main.c 30
                             496 ; genIpush
    00A2 21 64 00            497 	ld	hl,#0x0064
    00A5 E5                  498 	push	hl
