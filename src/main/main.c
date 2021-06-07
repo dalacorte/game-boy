@@ -13,16 +13,22 @@ void main()
 
     while (1)
     {
-        if (spriteIndex == 0)
+        switch (joypad())
         {
-            spriteIndex = 1;
-        }
-        else
-        {
-            spriteIndex = 0;
+        case J_LEFT:
+            scroll_sprite(0, -10, 0);
+            break;
+        case J_RIGHT:
+            scroll_sprite(0, 10, 0);
+            break;
+        case J_UP:
+            scroll_sprite(0, 0, -10);
+            break;
+        case J_DOWN:
+            scroll_sprite(0, 0, 10);
+            break;
         }
 
-        set_sprite_tile(0, spriteIndex);
-        delay(1000);
+        delay(100);
     }
 }
