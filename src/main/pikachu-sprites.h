@@ -1,6 +1,6 @@
 /*
 
- PIKACHUSPRITES.H
+ PIKACHU-SPRITES.H
 
  Include File.
 
@@ -24,8 +24,8 @@
 
 
 /* Bank of tiles. */
-#define PikachuBank 0
+#define pikachuBank 0
 /* Start of tile array. */
-extern unsigned char Pikachu[];
+extern unsigned char pikachu[];
 
-/* End of PIKACHUSPRITES.H */
+/* End of PIKACHU-SPRITES.H */

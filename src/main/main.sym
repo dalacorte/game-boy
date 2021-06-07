@@ -92,7 +92,7 @@
 ; Area: _GSINITTAIL
 ; Area: _GSFINAL
 ; Area: _DATA
-00:C0A0 _Pikachu
+00:C0A0 _pikachu
 ; Area: _BSS
 00:C0C0 __cpu
 00:C0C1 .mode

@@ -1,9 +1,9 @@
                               1 ;--------------------------------------------------------
                               2 ; File Created by SDCC : FreeWare ANSI-C Compiler
-                              3 ; Version 2.2.1 Sun Jun 06 21:42:09 2021
+                              3 ; Version 2.2.1 Sun Jun 06 22:43:25 2021
                               4 
                               5 ;--------------------------------------------------------
-                              6 	.module lcc105480
+                              6 	.module lcc287240
                               7 	
                               8 ;--------------------------------------------------------
                               9 ; Public variables in this module
@@ -15,7 +15,7 @@
                              15 	.globl _set_sprite_data
                              16 	.globl _joypad
                              17 	.globl _delay
-                             18 	.globl _Pikachu
+                             18 	.globl _pikachu
                              19 	.globl _main
                              20 ;--------------------------------------------------------
                              21 ; Externals used
@@ -90,7 +90,7 @@
                              90 ; internal ram data
                              91 ;--------------------------------------------------------
                              92 	.area _DATA
-   0000                      93 _Pikachu::
+   0000                      93 _pikachu::
    0000                      94 	.ds 32
                              95 ;--------------------------------------------------------
                              96 ; overlayable items in internal ram 
@@ -116,192 +116,192 @@
                             116 	.area _GSINIT
                             117 ;	main.c 33
                             118 ; genAssign (pointer)
-   0000 11 00 00            119 	ld	de,#_Pikachu + 0
+   0000 11 00 00            119 	ld	de,#_pikachu + 0
    0003 3E 61               120 	ld	a,#0x61
    0005 12                  121 	ld	(de),a
                             122 ; genPlus
                             123 ; genPlusIncr
-   0006 11 01 00            124 	ld	de,#_Pikachu + 0 + 1
+   0006 11 01 00            124 	ld	de,#_pikachu + 0 + 1
                             125 ; genAssign (pointer)
    0009 3E 61               126 	ld	a,#0x61
    000B 12                  127 	ld	(de),a
                             128 ; genPlus
                             129 ; genPlusIncr
-   000C 11 02 00            130 	ld	de,#_Pikachu + 0 + 2
+   000C 11 02 00            130 	ld	de,#_pikachu + 0 + 2
                             131 ; genAssign (pointer)
    000F 3E 00               132 	ld	a,#0x00
    0011 12                  133 	ld	(de),a
                             134 ; genPlus
                             135 ; genPlusIncr
-   0012 11 03 00            136 	ld	de,#_Pikachu + 0 + 3
+   0012 11 03 00            136 	ld	de,#_pikachu + 0 + 3
                             137 ; genAssign (pointer)
    0015 3E 31               138 	ld	a,#0x31
    0017 12                  139 	ld	(de),a
                             140 ; genPlus
                             141 ; genPlusIncr
-   0018 11 04 00            142 	ld	de,#_Pikachu + 0 + 4
+   0018 11 04 00            142 	ld	de,#_pikachu + 0 + 4
                             143 ; genAssign (pointer)
    001B 3E 1F               144 	ld	a,#0x1F
    001D 12                  145 	ld	(de),a
                             146 ; genPlus
                             147 ; genPlusIncr
-   001E 11 05 00            148 	ld	de,#_Pikachu + 0 + 5
+   001E 11 05 00            148 	ld	de,#_pikachu + 0 + 5
                             149 ; genAssign (pointer)
    0021 3E 00               150 	ld	a,#0x00
    0023 12                  151 	ld	(de),a
                             152 ; genPlus
                             153 ; genPlusIncr
-   0024 11 06 00            154 	ld	de,#_Pikachu + 0 + 6
+   0024 11 06 00            154 	ld	de,#_pikachu + 0 + 6
                             155 ; genAssign (pointer)
    0027 3E DF               156 	ld	a,#0xDF
    0029 12                  157 	ld	(de),a
                             158 ; genPlus
                             159 ; genPlusIncr
-   002A 11 07 00            160 	ld	de,#_Pikachu + 0 + 7
+   002A 11 07 00            160 	ld	de,#_pikachu + 0 + 7
                             161 ; genAssign (pointer)
    002D 3E C9               162 	ld	a,#0xC9
    002F 12                  163 	ld	(de),a
                             164 ; genPlus
                             165 ; genPlusIncr
-   0030 11 08 00            166 	ld	de,#_Pikachu + 0 + 8
+   0030 11 08 00            166 	ld	de,#_pikachu + 0 + 8
                             167 ; genAssign (pointer)
    0033 3E CF               168 	ld	a,#0xCF
    0035 12                  169 	ld	(de),a
                             170 ; genPlus
                             171 ; genPlusIncr
-   0036 11 09 00            172 	ld	de,#_Pikachu + 0 + 9
+   0036 11 09 00            172 	ld	de,#_pikachu + 0 + 9
                             173 ; genAssign (pointer)
    0039 3E D0               174 	ld	a,#0xD0
    003B 12                  175 	ld	(de),a
                             176 ; genPlus
                             177 ; genPlusIncr
-   003C 11 0A 00            178 	ld	de,#_Pikachu + 0 + 10
+   003C 11 0A 00            178 	ld	de,#_pikachu + 0 + 10
                             179 ; genAssign (pointer)
    003F 3E 1E               180 	ld	a,#0x1E
    0041 12                  181 	ld	(de),a
                             182 ; genPlus
                             183 ; genPlusIncr
-   0042 11 0B 00            184 	ld	de,#_Pikachu + 0 + 11
+   0042 11 0B 00            184 	ld	de,#_pikachu + 0 + 11
                             185 ; genAssign (pointer)
    0045 3E 40               186 	ld	a,#0x40
    0047 12                  187 	ld	(de),a
                             188 ; genPlus
                             189 ; genPlusIncr
-   0048 11 0C 00            190 	ld	de,#_Pikachu + 0 + 12
+   0048 11 0C 00            190 	ld	de,#_pikachu + 0 + 12
                             191 ; genAssign (pointer)
    004B 3E 3E               192 	ld	a,#0x3E
    004D 12                  193 	ld	(de),a
                             194 ; genPlus
                             195 ; genPlusIncr
-   004E 11 0D 00            196 	ld	de,#_Pikachu + 0 + 13
+   004E 11 0D 00            196 	ld	de,#_pikachu + 0 + 13
                             197 ; genAssign (pointer)
    0051 3E 40               198 	ld	a,#0x40
    0053 12                  199 	ld	(de),a
                             200 ; genPlus
                             201 ; genPlusIncr
-   0054 11 0E 00            202 	ld	de,#_Pikachu + 0 + 14
+   0054 11 0E 00            202 	ld	de,#_pikachu + 0 + 14
                             203 ; genAssign (pointer)
    0057 3E 32               204 	ld	a,#0x32
    0059 12                  205 	ld	(de),a
                             206 ; genPlus
                             207 ; genPlusIncr
-   005A 11 0F 00            208 	ld	de,#_Pikachu + 0 + 15
+   005A 11 0F 00            208 	ld	de,#_pikachu + 0 + 15
                             209 ; genAssign (pointer)
    005D 3E 0C               210 	ld	a,#0x0C
    005F 12                  211 	ld	(de),a
                             212 ; genPlus
                             213 ; genPlusIncr
-   0060 11 10 00            214 	ld	de,#_Pikachu + 0 + 16
+   0060 11 10 00            214 	ld	de,#_pikachu + 0 + 16
                             215 ; genAssign (pointer)
    0063 3E 00               216 	ld	a,#0x00
    0065 12                  217 	ld	(de),a
                             218 ; genPlus
                             219 ; genPlusIncr
-   0066 11 11 00            220 	ld	de,#_Pikachu + 0 + 17
+   0066 11 11 00            220 	ld	de,#_pikachu + 0 + 17
                             221 ; genAssign (pointer)
    0069 3E 00               222 	ld	a,#0x00
    006B 12                  223 	ld	(de),a
                             224 ; genPlus
                             225 ; genPlusIncr
-   006C 11 12 00            226 	ld	de,#_Pikachu + 0 + 18
+   006C 11 12 00            226 	ld	de,#_pikachu + 0 + 18
                             227 ; genAssign (pointer)
    006F 3E 61               228 	ld	a,#0x61
    0071 12                  229 	ld	(de),a
                             230 ; genPlus
                             231 ; genPlusIncr
-   0072 11 13 00            232 	ld	de,#_Pikachu + 0 + 19
+   0072 11 13 00            232 	ld	de,#_pikachu + 0 + 19
                             233 ; genAssign (pointer)
    0075 3E 61               234 	ld	a,#0x61
    0077 12                  235 	ld	(de),a
                             236 ; genPlus
                             237 ; genPlusIncr
-   0078 11 14 00            238 	ld	de,#_Pikachu + 0 + 20
+   0078 11 14 00            238 	ld	de,#_pikachu + 0 + 20
                             239 ; genAssign (pointer)
    007B 3E 00               240 	ld	a,#0x00
    007D 12                  241 	ld	(de),a
                             242 ; genPlus
                             243 ; genPlusIncr
-   007E 11 15 00            244 	ld	de,#_Pikachu + 0 + 21
+   007E 11 15 00            244 	ld	de,#_pikachu + 0 + 21
                             245 ; genAssign (pointer)
    0081 3E 31               246 	ld	a,#0x31
    0083 12                  247 	ld	(de),a
                             248 ; genPlus
                             249 ; genPlusIncr
-   0084 11 16 00            250 	ld	de,#_Pikachu + 0 + 22
+   0084 11 16 00            250 	ld	de,#_pikachu + 0 + 22
                             251 ; genAssign (pointer)
    0087 3E DF               252 	ld	a,#0xDF
    0089 12                  253 	ld	(de),a
                             254 ; genPlus
                             255 ; genPlusIncr
-   008A 11 17 00            256 	ld	de,#_Pikachu + 0 + 23
+   008A 11 17 00            256 	ld	de,#_pikachu + 0 + 23
                             257 ; genAssign (pointer)
    008D 3E C0               258 	ld	a,#0xC0
    008F 12                  259 	ld	(de),a
                             260 ; genPlus
                             261 ; genPlusIncr
-   0090 11 18 00            262 	ld	de,#_Pikachu + 0 + 24
+   0090 11 18 00            262 	ld	de,#_pikachu + 0 + 24
                             263 ; genAssign (pointer)
    0093 3E DF               264 	ld	a,#0xDF
    0095 12                  265 	ld	(de),a
                             266 ; genPlus
                             267 ; genPlusIncr
-   0096 11 19 00            268 	ld	de,#_Pikachu + 0 + 25
+   0096 11 19 00            268 	ld	de,#_pikachu + 0 + 25
                             269 ; genAssign (pointer)
    0099 3E C9               270 	ld	a,#0xC9
    009B 12                  271 	ld	(de),a
                             272 ; genPlus
                             273 ; genPlusIncr
-   009C 11 1A 00            274 	ld	de,#_Pikachu + 0 + 26
+   009C 11 1A 00            274 	ld	de,#_pikachu + 0 + 26
                             275 ; genAssign (pointer)
    009F 3E 0F               276 	ld	a,#0x0F
    00A1 12                  277 	ld	(de),a
                             278 ; genPlus
                             279 ; genPlusIncr
-   00A2 11 1B 00            280 	ld	de,#_Pikachu + 0 + 27
+   00A2 11 1B 00            280 	ld	de,#_pikachu + 0 + 27
                             281 ; genAssign (pointer)
    00A5 3E 50               282 	ld	a,#0x50
    00A7 12                  283 	ld	(de),a
                             284 ; genPlus
                             285 ; genPlusIncr
-   00A8 11 1C 00            286 	ld	de,#_Pikachu + 0 + 28
+   00A8 11 1C 00            286 	ld	de,#_pikachu + 0 + 28
                             287 ; genAssign (pointer)
    00AB 3E 3E               288 	ld	a,#0x3E
    00AD 12                  289 	ld	(de),a
                             290 ; genPlus
                             291 ; genPlusIncr
-   00AE 11 1D 00            292 	ld	de,#_Pikachu + 0 + 29
+   00AE 11 1D 00            292 	ld	de,#_pikachu + 0 + 29
                             293 ; genAssign (pointer)
    00B1 3E 40               294 	ld	a,#0x40
    00B3 12                  295 	ld	(de),a
                             296 ; genPlus
                             297 ; genPlusIncr
-   00B4 11 1E 00            298 	ld	de,#_Pikachu + 0 + 30
+   00B4 11 1E 00            298 	ld	de,#_pikachu + 0 + 30
                             299 ; genAssign (pointer)
    00B7 3E 32               300 	ld	a,#0x32
    00B9 12                  301 	ld	(de),a
                             302 ; genPlus
                             303 ; genPlusIncr
-   00BA 11 1F 00            304 	ld	de,#_Pikachu + 0 + 31
+   00BA 11 1F 00            304 	ld	de,#_pikachu + 0 + 31
                             305 ; genAssign (pointer)
    00BD 3E 0C               306 	ld	a,#0x0C
    00BF 12                  307 	ld	(de),a
@@ -326,7 +326,7 @@
                             326 	
                             327 ;	main.c 7
                             328 ; genIpush
-   0001 21 00 00            329 	ld	hl,#_Pikachu + 0
+   0001 21 00 00            329 	ld	hl,#_pikachu + 0
    0004 E5                  330 	push	hl
                             331 ; genIpush
    0005 3E 02               332 	ld	a,#0x02
@@ -555,7 +555,6 @@ Symbol Table
     _OCPD_REG                          **** GX
     _OCPS_REG                          **** GX
     _P1_REG                            **** GX
-  1 _Pikachu                           0000 GR
     _RP_REG                            **** GX
     _SB_REG                            **** GX
     _SCX_REG                           **** GX
@@ -579,6 +578,7 @@ Symbol Table
     _joypad                            **** GX
   0 _main                              0000 GR
     _move_sprite                       **** GX
+  1 _pikachu                           0000 GR
     _scroll_sprite                     **** GX
     _set_sprite_data                   **** GX
     _set_sprite_tile                   **** GX

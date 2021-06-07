@@ -1,10 +1,10 @@
 #include <gb/gb.h>
 #include <stdio.h>
-#include "PikachuSprites.c"
+#include "pikachu-sprites.c"
 
 void main()
 {
-    set_sprite_data(0, 2, Pikachu);
+    set_sprite_data(0, 2, pikachu);
     set_sprite_tile(0, 0);
     move_sprite(0, 88, 78);
     SHOW_SPRITES;
