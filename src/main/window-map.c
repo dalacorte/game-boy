@@ -1,0 +1,5 @@
+unsigned char windowMap[] =
+    {
+        0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
+
+/* End of BACKGROUND-MAP.C */
