@@ -1,4 +1,5 @@
 #include <gb/gb.h>
+#include <gb/font.h>
 #include <stdio.h>
 #include "background-map.c"
 #include "background-sprites.c"
@@ -6,6 +7,11 @@
 
 void main()
 {
+    font_t min_font;
+    font_init();
+    min_font = font_load(font_min); // 36 tiles
+    font_set(min_font);
+
     set_sprite_data(0, 2, pikachu);
     set_sprite_tile(0, 0);
     move_sprite(0, 88, 78);
