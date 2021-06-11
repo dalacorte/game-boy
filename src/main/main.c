@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include "background-map.c"
 #include "background-sprites.c"
+#include "window-map.c"
 #include "pikachu-sprites.c"
 
 void main()
@@ -12,6 +13,10 @@ void main()
     min_font = font_load(font_min); // 36 tiles
     font_set(min_font);
 
+    set_win_tiles(0, 0, 5, 1, windowMap);
+    move_win(7, 120);
+    SHOW_WIN;
+
     set_sprite_data(0, 2, pikachu);
     set_sprite_tile(0, 0);
     move_sprite(0, 88, 78);
@@ -20,6 +25,7 @@ void main()
     set_bkg_data(37, 7, backgroundTiles); // starts 37
     set_bkg_tiles(0, 0, 40, 18, backgroundMap);
     SHOW_BKG;
+
     DISPLAY_ON;
 
     // specific order
