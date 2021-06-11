@@ -17,7 +17,7 @@ void main()
     move_sprite(0, 88, 78);
     SHOW_SPRITES;
 
-    set_bkg_data(0, 7, backgroundTiles);
+    set_bkg_data(37, 7, backgroundTiles); // starts 37
     set_bkg_tiles(0, 0, 40, 18, backgroundMap);
     SHOW_BKG;
     DISPLAY_ON;
