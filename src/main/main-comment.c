@@ -36,3 +36,8 @@ NR13_REG = 0x00;
 // 2-0	3 Most Significant bits of frequency
 // 1100 0011 is 0xC3, initialize, no consecutive, frequency = MSB + LSB = 011 0000 0000 = 0x300
 NR14_REG = 0xC3;
+
+NR41_REG = 0x1F;
+NR42_REG = 0xF1;
+NR43_REG = 0x30;
+NR44_REG = 0xC0;
