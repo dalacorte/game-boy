@@ -42,9 +42,7 @@ void jump()
     }
 
     currentSpeedY = currentSpeedY + gravity;
-
     playerLocation[1] = playerLocation[1] - currentSpeedY;
-
     possibleY = wouldHitSurface(playerLocation[1]);
 
     if (possibleY > -1)
@@ -119,10 +117,12 @@ void main()
             move_sprite(0, playerLocation[0], playerLocation[1]);
             break;
         case J_UP:
-            scroll_sprite(0, 0, -10);
+            playerLocation[1] = playerLocation[1] - 10;
+            move_sprite(0, playerLocation[0], playerLocation[1]);
             break;
         case J_DOWN:
-            scroll_sprite(0, 0, 10);
+            playerLocation[1] = playerLocation[1] + 10;
+            move_sprite(0, playerLocation[0], playerLocation[1]);
             break;
         }
 
