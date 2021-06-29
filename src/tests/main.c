@@ -16,6 +16,11 @@ void performantDelay(UINT8 numloops)
     }
 }
 
+UBYTE checkCollisions(struct mainCharacter *one, struct mainCharacter *two)
+{
+    return (one->x >= two->x && one->x <= two->x + two->width) && (one->y >= two->y && one->y <= two->y + two->height) || (two->x >= one->x && two->x <= one->x + one->width) && (two->y >= one->y && two->y <= one->y + one->height);
+}
+
 void moveGameCharacter(struct mainCharacter *character, UINT8 x, UINT8 y)
 {
     move_sprite(character->spriteIds[0], x, y);
@@ -71,7 +76,7 @@ void main()
     SHOW_SPRITES;
     DISPLAY_ON;
 
-    while (1)
+    while (!checkCollisions(&ship, &bug))
     {
         if (joypad() & J_LEFT)
         {
@@ -96,4 +101,6 @@ void main()
 
         performantDelay(5);
     }
+
+    printf("GAME OVER");
 }
