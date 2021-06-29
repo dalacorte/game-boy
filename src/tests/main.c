@@ -7,6 +7,15 @@ struct mainCharacter ship;
 struct mainCharacter bug;
 UBYTE spriteSize = 8;
 
+void performantDelay(UINT8 numloops)
+{
+    UINT8 i;
+    for (i = 0; i < numloops; i++)
+    {
+        wait_vbl_done();
+    }
+}
+
 void moveGameCharacter(struct mainCharacter *character, UINT8 x, UINT8 y)
 {
     move_sprite(character->spriteIds[0], x, y);
@@ -64,5 +73,27 @@ void main()
 
     while (1)
     {
+        if (joypad() & J_LEFT)
+        {
+            ship.x -= 2;
+            moveGameCharacter(&ship, ship.x, ship.y);
+        }
+        if (joypad() & J_RIGHT)
+        {
+            ship.x += 2;
+            moveGameCharacter(&ship, ship.x, ship.y);
+        }
+
+        bug.y += 5;
+
+        if (bug.y >= 144)
+        {
+            bug.y = 0;
+            bug.x = ship.x;
+        }
+
+        moveGameCharacter(&bug, bug.x, bug.y);
+
+        performantDelay(5);
     }
 }
