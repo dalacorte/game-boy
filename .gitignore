@@ -2,14 +2,12 @@
 *.d
 
 # Object files
-*.o
 *.ko
 *.obj
 *.elf
 
 # Linker output
 *.ilk
-*.map
 *.exp
 
 # Precompiled Headers
@@ -52,9 +50,4 @@ Mkfile.old
 dkms.conf
 
 # VisualStudioCode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
 .vscode/settings.json
